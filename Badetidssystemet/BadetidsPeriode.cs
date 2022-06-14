@@ -14,8 +14,20 @@ namespace Badetidssystemet
             Kreds = new Dictionary<int, Kreds>();
 
 
-            new DateTime().AddHours(7).AddMinutes(30);
-            new DateTime().AddHours(20).AddMinutes(30);
+            new DateTime().AddHours(7).AddMinutes(0);
+            int DateTime = 7;
+            if (DateTime < 7)
+            {
+                Console.WriteLine("Man kan ikke bruge pool området før kl. 7");
+            }
+            new DateTime().AddHours(20).AddMinutes(0);
+            int DateTime = 20;
+            if (DateTime > 20)
+            {
+                Console.WriteLine("Man kan ikke bruge pool området efter kl. 20");
+            }
+ 
+
            
         }
 
@@ -51,6 +63,16 @@ namespace Badetidssystemet
             return $"Type: {newType} Start tidspunkt: {newStartTidspunkt} Slut tidspunkt: {newSlutTidspunkt}";
 
         }
+
+       void AdderKreds (Kreds kreds)
+       {
+            kreds.Add(kreds.NewKreds, kreds);
+       }
+
+       void SletKreds(string, IDictionary)
+       {
+
+       }
 
 
 
