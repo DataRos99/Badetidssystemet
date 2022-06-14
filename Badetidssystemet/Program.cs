@@ -23,9 +23,31 @@ class Program
         Kreds newKreds = new Kreds();
         newKreds.NewKreds(ID, Navn, Adresse, AntalDeltagere);
 
+            string Type;
+            DateTime StartTidspunkt;
+            DateTime SlutTidspunkt;
+
+
+            Console.WriteLine("Indtast følgende oplysninger: Type, start tidspunkt og slut tidspunkt");
+            Type = Console.ReadLine();
+            StartTidspunkt = Convert.ToDateTime(Console.ReadLine());
+            SlutTidspunkt = Convert.ToDateTime(Console.ReadLine());
+
+            BadetidsPeriode newBadetidsPeriode = new BadetidsPeriode();
+            newBadetidsPeriode.NewBadetidsPeriode(Type, StartTidspunkt, SlutTidspunkt);
+
+
+            
+
+
 
 
 
        }
+
+       
+
+
+
 }
 }

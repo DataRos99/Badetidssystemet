@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Badetidssystemet
 {
-    class Kreds
-    {
-        public Kreds()
-        {
+   public class Kreds
+   {
+        
 
-        }
+        
+       
 
         public void NewKreds(int ID, string Navn, string Adresse, int AntalDeltagere) 
         {
@@ -28,7 +28,12 @@ namespace Badetidssystemet
         string newAdresse;
         int newAntalDeltagere;
 
+        public override string ToString()
+        {
+            return $"Nummer: {newID} Navn: {newNavn} Adresse: {newAdresse} Antal Deltagere: {newAntalDeltagere}";
+        }
 
 
-    }
+
+   }
 }
