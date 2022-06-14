@@ -64,12 +64,12 @@ namespace Badetidssystemet
 
         }
 
-       void AdderKreds (Kreds kreds)
+       void AdderKreds(Kreds kreds)
        {
             kreds.Add(kreds.NewKreds, kreds);
        }
 
-       void SletKreds(string, IDictionary)
+       void SletKreds(string, SletKreds(string ID)
        {
 
        }
